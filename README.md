@@ -105,9 +105,9 @@ E [Documentação ihc](ihc_compras.pdf). <br>
 
 |    Função     |                  Nome                 |                          GitHub                              | 
 | :-----------: | :-----------------------------------: | :----------------------------------------------------------: |
-| Product Owner | Luiz Fernando Rinaldi Riato           |[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/paulovictorio)|
-| Scrum Master  | Matheus Prusch                        |[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Felipe-Thiago)|
-| Dev Team      | Samuel Porcer Pregnolato              |[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/thiago-diegoli)|
+| Product Owner | Luiz Fernando Rinaldi Riato           |[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/LuizRiato)|
+| Scrum Master  | Matheus Prusch                        |[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/MatheusPrusch77)|
+| Dev Team      | Samuel Porcer Pregnolato              |[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/SamuelPorcer)|
 
 
 → [Voltar ao topo](#topo)
