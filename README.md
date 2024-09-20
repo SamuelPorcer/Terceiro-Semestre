@@ -84,7 +84,7 @@ E [Documentação ihc](ihc_compras.pdf). <br>
     
 > 🔗 **Links gerais** <br>
 > - Link do sistema funcional: [clique aqui para acessar](https://projeto-mvc-restful-frontend.vercel.app)
-> - Repositório do projeto: [clique aqui para acessar](https://github.com/thiago-diegoli/Projeto-MVC-RESTful)
+> - Repositório do projeto: [clique aqui para acessar](https://github.com/ADACompany01/Terceiro-Semestre/tree/main)
 
 
 ## 🛠️ Tecnologias Utilizadas 
