@@ -1,4 +1,3 @@
-use('ada')
 db.clientes.insertMany([
     {
         "_id": ObjectId(),
@@ -77,6 +76,58 @@ db.clientes.insertMany([
                 "emailVendedor": "vendedor3@example.com"
             }
         ]
+    },
+    {
+        "_id": ObjectId(),
+        "nomeCliente": "Cliente 4",
+        "telefone": "444444444",
+        "endereco": "Rua D, 101",
+        "cnpj": "12.345.678/0001-04",
+        "usuario": {
+            "email": "cliente4@example.com",
+            "senha": "hash_senha_4",
+            "tipoUsuario": "cliente",
+            "telefone": "444444444",
+            "nomeCompleto": "Cliente Quatro"
+        },
+        "orcamentos": [
+            {
+                "id": ObjectId(),
+                "validadeOrcamento": "2024-04-01",
+                "dataCriacao": "2023-06-15",
+                "valorTotal": 3000,
+                "tipoServico": "Serviço D",
+                "statusOrcamento": "Aprovado",
+                "descricao": "Orçamento para serviço D",
+                "emailVendedor": "vendedor4@example.com"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId(),
+        "nomeCliente": "Cliente 5",
+        "telefone": "555555555",
+        "endereco": "Rua E, 202",
+        "cnpj": "12.345.678/0001-05",
+        "usuario": {
+            "email": "cliente5@example.com",
+            "senha": "hash_senha_5",
+            "tipoUsuario": "cliente",
+            "telefone": "555555555",
+            "nomeCompleto": "Cliente Cinco"
+        },
+        "orcamentos": [
+            {
+                "id": ObjectId(),
+                "validadeOrcamento": "2024-05-01",
+                "dataCriacao": "2023-05-10",
+                "valorTotal": 3500,
+                "tipoServico": "Serviço E",
+                "statusOrcamento": "Rejeitado",
+                "descricao": "Orçamento para serviço E",
+                "emailVendedor": "vendedor5@example.com"
+            }
+        ]
     }
 ]);
 
@@ -123,6 +174,34 @@ db.funcionarios.insertMany([
                 "data": "2023-08-10"
             }
         ]
+    },
+    {
+        "_id": ObjectId(),
+        "nomeFuncionario": "Funcionário 4",
+        "endereco": "Rua W, 400",
+        "cargo": "Analista",
+        "idUsuario": ObjectId(),
+        "chatBot": [
+            {
+                "id_chatbot": ObjectId(),
+                "texto_chat": "Quarta conversa",
+                "data": "2023-08-15"
+            }
+        ]
+    },
+    {
+        "_id": ObjectId(),
+        "nomeFuncionario": "Funcionário 5",
+        "endereco": "Rua Q, 500",
+        "cargo": "Desenvolvedor",
+        "idUsuario": ObjectId(),
+        "chatBot": [
+            {
+                "id_chatbot": ObjectId(),
+                "texto_chat": "Conversa final",
+                "data": "2023-08-20"
+            }
+        ]
     }
 ]);
 
@@ -145,8 +224,21 @@ db.servicos.insertMany([
         "nome": "Serviço C",
         "valor": 2500,
         "tipoServico": "Consultoria"
+    },
+    {
+        "_id": ObjectId(),
+        "nome": "Serviço D",
+        "valor": 3000,
+        "tipoServico": "Treinamento"
+    },
+    {
+        "_id": ObjectId(),
+        "nome": "Serviço E",
+        "valor": 3500,
+        "tipoServico": "Desenvolvimento"
     }
 ]);
+
 
 
 //consulta servícos com valor superior a 500 reais
