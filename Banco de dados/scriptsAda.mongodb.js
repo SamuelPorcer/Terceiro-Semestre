@@ -1,15 +1,16 @@
+use('ada')
 db.clientes.insertMany([
     {
         "_id": ObjectId(),
         "nomeCliente": "Cliente 1",
-        "telefone": "111111111",
+        "telefone": "15991236399",
         "endereco": "Rua A, 123",
         "cnpj": "12.345.678/0001-01",
         "usuario": {
             "email": "cliente1@example.com",
             "senha": "hash_senha_1",
             "tipoUsuario": "cliente",
-            "telefone": "111111111",
+            "telefone": "15991236399",
             "nomeCompleto": "Cliente Um"
         },
         "orcamentos": [
@@ -28,14 +29,14 @@ db.clientes.insertMany([
     {
         "_id": ObjectId(),
         "nomeCliente": "Cliente 2",
-        "telefone": "222222222",
+        "telefone": "15990154677",
         "endereco": "Rua B, 456",
         "cnpj": "12.345.678/0001-02",
         "usuario": {
             "email": "cliente2@example.com",
             "senha": "hash_senha_2",
             "tipoUsuario": "cliente",
-            "telefone": "222222222",
+            "telefone": "15990154677",
             "nomeCompleto": "Cliente Dois"
         },
         "orcamentos": [
@@ -54,14 +55,14 @@ db.clientes.insertMany([
     {
         "_id": ObjectId(),
         "nomeCliente": "Cliente 3",
-        "telefone": "333333333",
+        "telefone": "15991356479",
         "endereco": "Rua C, 789",
         "cnpj": "12.345.678/0001-03",
         "usuario": {
             "email": "cliente3@example.com",
             "senha": "hash_senha_3",
             "tipoUsuario": "cliente",
-            "telefone": "333333333",
+            "telefone": "15991356479",
             "nomeCompleto": "Cliente Três"
         },
         "orcamentos": [
@@ -80,14 +81,14 @@ db.clientes.insertMany([
     {
         "_id": ObjectId(),
         "nomeCliente": "Cliente 4",
-        "telefone": "444444444",
+        "telefone": "1535694678",
         "endereco": "Rua D, 101",
         "cnpj": "12.345.678/0001-04",
         "usuario": {
             "email": "cliente4@example.com",
             "senha": "hash_senha_4",
             "tipoUsuario": "cliente",
-            "telefone": "444444444",
+            "telefone": "1535694678",
             "nomeCompleto": "Cliente Quatro"
         },
         "orcamentos": [
@@ -106,14 +107,14 @@ db.clientes.insertMany([
     {
         "_id": ObjectId(),
         "nomeCliente": "Cliente 5",
-        "telefone": "555555555",
+        "telefone": "1546561378",
         "endereco": "Rua E, 202",
         "cnpj": "12.345.678/0001-05",
         "usuario": {
             "email": "cliente5@example.com",
             "senha": "hash_senha_5",
             "tipoUsuario": "cliente",
-            "telefone": "555555555",
+            "telefone": "1546561378",
             "nomeCompleto": "Cliente Cinco"
         },
         "orcamentos": [
@@ -209,13 +210,13 @@ db.funcionarios.insertMany([
 db.servicos.insertMany([
     {
         "_id": ObjectId(),
-        "nome": "Serviço A",
+        "nome": "Serviço V",
         "valor": 1500,
-        "tipoServico": "Limpeza"
+        "tipoServico": "Venda"
     },
     {
         "_id": ObjectId(),
-        "nome": "Serviço B",
+        "nome": "Serviço M",
         "valor": 2000,
         "tipoServico": "Manutenção"
     },
@@ -227,13 +228,13 @@ db.servicos.insertMany([
     },
     {
         "_id": ObjectId(),
-        "nome": "Serviço D",
+        "nome": "Serviço T",
         "valor": 3000,
         "tipoServico": "Treinamento"
     },
     {
         "_id": ObjectId(),
-        "nome": "Serviço E",
+        "nome": "Serviço D",
         "valor": 3500,
         "tipoServico": "Desenvolvimento"
     }
@@ -319,7 +320,7 @@ db.lojas.find({
         $near: {
             $geometry: {
                 type: "Point",
-                coordinates: [-46.625290, -23.533773] 
+                coordinates: [-46.625290, -23.533773]
             },
             $maxDistance: 5000  // Distância máxima em metros (5km)
         }
