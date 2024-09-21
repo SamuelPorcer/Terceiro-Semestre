@@ -27,6 +27,7 @@ const Footer = () => {
           id="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2226.0559646948127!2d-47.4490959927608!3d-23.53142746993303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58b72bdd65027%3A0xb94c5e9f90d48401!2sFatec%20Votorantim!5e1!3m2!1spt-BR!2sbr!4v1699741800003!5m2!1spt-BR!2sbr"
           style={{ border: 0 }}
+          title='location'
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
