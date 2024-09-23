@@ -2,133 +2,193 @@ use('ada')
 db.clientes.insertMany([
     {
         "_id": ObjectId(),
-        "nomeCliente": "Cliente 1",
+        "nomeCliente": "Álvaro",
         "telefone": "15991236399",
         "endereco": "Rua A, 123",
+        "localizacao": {
+            type: "Point",
+            coordinates: [-46.625290, -23.533773]
+        },
         "cnpj": "12.345.678/0001-01",
+        "cep": "01001-000",
+        "logradouro": "Praça da Sé",
+        "complemento": "lado ímpar",
+        "bairro": "Sé",
+        "localidade": "São Paulo",
+        "uf": "SP",
+        "estado": "São Paulo",
+        "ddd": "11",
         "usuario": {
-            "email": "cliente1@example.com",
+            "email": "alvaro@example.com",
             "senha": "hash_senha_1",
             "tipoUsuario": "cliente",
             "telefone": "15991236399",
-            "nomeCompleto": "Cliente Um"
-        },
-        "orcamentos": [
-            {
-                "id": ObjectId(),
-                "validadeOrcamento": "2024-01-01",
-                "dataCriacao": "2023-09-01",
-                "valorTotal": 1500,
-                "tipoServico": "Serviço A",
-                "statusOrcamento": "Aprovado",
-                "descricao": "Orçamento para serviço A",
-                "emailVendedor": "vendedor1@example.com"
-            }
-        ]
+            "nomeCompleto": "Álvaro Berardo"
+        }
     },
     {
         "_id": ObjectId(),
-        "nomeCliente": "Cliente 2",
+        "nomeCliente": "Berenice",
         "telefone": "15990154677",
         "endereco": "Rua B, 456",
+        "localizacao": {
+            type: "Point",
+            coordinates: [-46.625290, -23.533773]
+        },
         "cnpj": "12.345.678/0001-02",
+        "cep": "01001-000",
+        "logradouro": "Praça da Sé",
+        "complemento": "lado ímpar",
+        "bairro": "Sé",
+        "localidade": "São Paulo",
+        "uf": "SP",
+        "estado": "São Paulo",
+        "ddd": "11",
         "usuario": {
             "email": "cliente2@example.com",
             "senha": "hash_senha_2",
             "tipoUsuario": "cliente",
             "telefone": "15990154677",
-            "nomeCompleto": "Cliente Dois"
-        },
-        "orcamentos": [
-            {
-                "id": ObjectId(),
-                "validadeOrcamento": "2024-02-01",
-                "dataCriacao": "2023-08-15",
-                "valorTotal": 2000,
-                "tipoServico": "Serviço B",
-                "statusOrcamento": "Pendente",
-                "descricao": "Orçamento para serviço B",
-                "emailVendedor": "vendedor2@example.com"
-            }
-        ]
+            "nomeCompleto": "Berenice Silva"
+        }
     },
     {
         "_id": ObjectId(),
-        "nomeCliente": "Cliente 3",
+        "nomeCliente": "Cláudio",
         "telefone": "15991356479",
         "endereco": "Rua C, 789",
+        "localizacao": {
+            type: "Point",
+            coordinates: [-46.625290, -23.533773]
+        },
         "cnpj": "12.345.678/0001-03",
+        "cep": "01001-000",
+        "logradouro": "Praça da Sé",
+        "complemento": "lado ímpar",
+        "bairro": "Sé",
+        "localidade": "São Paulo",
+        "uf": "SP",
+        "estado": "São Paulo",
+        "ddd": "11",
         "usuario": {
             "email": "cliente3@example.com",
             "senha": "hash_senha_3",
             "tipoUsuario": "cliente",
             "telefone": "15991356479",
-            "nomeCompleto": "Cliente Três"
-        },
-        "orcamentos": [
-            {
-                "id": ObjectId(),
-                "validadeOrcamento": "2024-03-01",
-                "dataCriacao": "2023-07-20",
-                "valorTotal": 2500,
-                "tipoServico": "Serviço C",
-                "statusOrcamento": "Rejeitado",
-                "descricao": "Orçamento para serviço C",
-                "emailVendedor": "vendedor3@example.com"
-            }
-        ]
+            "nomeCompleto": "Cláudio Paulo"
+        }
     },
     {
         "_id": ObjectId(),
-        "nomeCliente": "Cliente 4",
+        "nomeCliente": "Dartanhan",
         "telefone": "1535694678",
         "endereco": "Rua D, 101",
+        "localizacao": {
+            type: "Point",
+            coordinates: [-46.625290, -23.533773]
+        },
         "cnpj": "12.345.678/0001-04",
+        "cep": "01001-000",
+        "logradouro": "Praça da Sé",
+        "complemento": "lado ímpar",
+        "bairro": "Sé",
+        "localidade": "São Paulo",
+        "uf": "SP",
+        "estado": "São Paulo",
+        "ddd": "11",
         "usuario": {
             "email": "cliente4@example.com",
             "senha": "hash_senha_4",
             "tipoUsuario": "cliente",
             "telefone": "1535694678",
-            "nomeCompleto": "Cliente Quatro"
-        },
-        "orcamentos": [
-            {
-                "id": ObjectId(),
-                "validadeOrcamento": "2024-04-01",
-                "dataCriacao": "2023-06-15",
-                "valorTotal": 3000,
-                "tipoServico": "Serviço D",
-                "statusOrcamento": "Aprovado",
-                "descricao": "Orçamento para serviço D",
-                "emailVendedor": "vendedor4@example.com"
-            }
-        ]
+            "nomeCompleto": "Dartanhan Leis"
+        }
     },
     {
         "_id": ObjectId(),
-        "nomeCliente": "Cliente 5",
+        "nomeCliente": "Ester",
         "telefone": "1546561378",
         "endereco": "Rua E, 202",
+        "localizacao": {
+            type: "Point",
+            coordinates: [-46.625290, -23.533773]
+        },
         "cnpj": "12.345.678/0001-05",
+        "cep": "01001-000",
+        "logradouro": "Praça da Sé",
+        "complemento": "lado ímpar",
+        "bairro": "Sé",
+        "localidade": "São Paulo",
+        "uf": "SP",
+        "estado": "São Paulo",
+        "ddd": "11",
         "usuario": {
             "email": "cliente5@example.com",
             "senha": "hash_senha_5",
             "tipoUsuario": "cliente",
             "telefone": "1546561378",
-            "nomeCompleto": "Cliente Cinco"
-        },
-        "orcamentos": [
-            {
-                "id": ObjectId(),
-                "validadeOrcamento": "2024-05-01",
-                "dataCriacao": "2023-05-10",
-                "valorTotal": 3500,
-                "tipoServico": "Serviço E",
-                "statusOrcamento": "Rejeitado",
-                "descricao": "Orçamento para serviço E",
-                "emailVendedor": "vendedor5@example.com"
-            }
-        ]
+            "nomeCompleto": "Ester Favo"
+        }
+    }
+]);
+
+
+use('ada');
+db.orcamentos.insertMany([
+    {
+        "_id": ObjectId(),
+        "clienteId": ObjectId("CLIENTE_1_ID"), 
+        "validadeOrcamento": "2024-01-01",
+        "dataCriacao": "2023-09-01",
+        "valorTotal": 1500,
+        "tipoServico": "Serviço A",
+        "statusOrcamento": "Aprovado",
+        "descricao": "Orçamento para serviço A",
+        "emailVendedor": "vendedor1@example.com"
+    },
+    {
+        "_id": ObjectId(),
+        "clienteId": ObjectId("CLIENTE_2_ID"), 
+        "validadeOrcamento": "2024-02-01",
+        "dataCriacao": "2023-08-15",
+        "valorTotal": 2000,
+        "tipoServico": "Serviço B",
+        "statusOrcamento": "Pendente",
+        "descricao": "Orçamento para serviço B",
+        "emailVendedor": "vendedor2@example.com"
+    },
+    {
+        "_id": ObjectId(),
+        "clienteId": ObjectId("CLIENTE_3_ID"), 
+        "validadeOrcamento": "2024-03-01",
+        "dataCriacao": "2023-07-20",
+        "valorTotal": 2500,
+        "tipoServico": "Serviço C",
+        "statusOrcamento": "Rejeitado",
+        "descricao": "Orçamento para serviço C",
+        "emailVendedor": "vendedor3@example.com"
+    },
+    {
+        "_id": ObjectId(),
+        "clienteId": ObjectId("CLIENTE_4_ID"), 
+        "validadeOrcamento": "2024-04-01",
+        "dataCriacao": "2023-06-15",
+        "valorTotal": 3000,
+        "tipoServico": "Serviço D",
+        "statusOrcamento": "Aprovado",
+        "descricao": "Orçamento para serviço D",
+        "emailVendedor": "vendedor4@example.com"
+    },
+    {
+        "_id": ObjectId(),
+        "clienteId": ObjectId("CLIENTE_5_ID"), 
+        "validadeOrcamento": "2024-05-01",
+        "dataCriacao": "2023-05-10",
+        "valorTotal": 3500,
+        "tipoServico": "Serviço E",
+        "statusOrcamento": "Rejeitado",
+        "descricao": "Orçamento para serviço E",
+        "emailVendedor": "vendedor5@example.com"
     }
 ]);
 
@@ -136,8 +196,15 @@ db.clientes.insertMany([
 db.funcionarios.insertMany([
     {
         "_id": ObjectId(),
-        "nomeFuncionario": "Funcionário 1",
-        "endereco": "Avenida X, 100",
+        "nomeFuncionario": "Lucas Andrade Silva",
+            "cep": "18010-000",
+            "logradouro": "Avenida Dom Aguirre",
+            "complemento": "lado par",
+            "bairro": "Centro",
+            "localidade": "Sorocaba",
+            "uf": "SP",
+            "estado": "São Paulo",
+            "ddd": "15",
         "cargo": "Gerente",
         "idUsuario": ObjectId(),
         "chatBot": [
@@ -150,8 +217,15 @@ db.funcionarios.insertMany([
     },
     {
         "_id": ObjectId(),
-        "nomeFuncionario": "Funcionário 2",
-        "endereco": "Rua Y, 200",
+        "nomeFuncionario": "Mariana Costa dos Santos",
+            "cep": "18030-000",
+            "logradouro": "Rua General Carneiro",
+            "complemento": "próximo ao parque",
+            "bairro": "Centro",
+            "localidade": "Sorocaba",
+            "uf": "SP",
+            "estado": "São Paulo",
+            "ddd": "15",
         "cargo": "Atendente",
         "idUsuario": ObjectId(),
         "chatBot": [
@@ -164,8 +238,15 @@ db.funcionarios.insertMany([
     },
     {
         "_id": ObjectId(),
-        "nomeFuncionario": "Funcionário 3",
-        "endereco": "Travessa Z, 300",
+        "nomeFuncionario": "Gabriel Almeida Ferreira",
+            "cep": "18273-000",
+            "logradouro": "Rua São Paulo",
+            "complemento": "",
+            "bairro": "Parque das Laranjeiras",
+            "localidade": "Votorantim",
+            "uf": "SP",
+            "estado": "São Paulo",
+            "ddd": "15",   
         "cargo": "Supervisor",
         "idUsuario": ObjectId(),
         "chatBot": [
@@ -178,8 +259,15 @@ db.funcionarios.insertMany([
     },
     {
         "_id": ObjectId(),
-        "nomeFuncionario": "Funcionário 4",
-        "endereco": "Rua W, 400",
+        "nomeFuncionario": "Ana Paula Martins de Souza",
+            "cep": "18045-000",
+            "logradouro": "Avenida Itavuvu",
+            "complemento": "lado ímpar",
+            "bairro": "Jardim Vera Cruz",
+            "localidade": "Sorocaba",
+            "uf": "SP",
+            "estado": "São Paulo",
+            "ddd": "15",     
         "cargo": "Analista",
         "idUsuario": ObjectId(),
         "chatBot": [
@@ -192,8 +280,15 @@ db.funcionarios.insertMany([
     },
     {
         "_id": ObjectId(),
-        "nomeFuncionario": "Funcionário 5",
-        "endereco": "Rua Q, 500",
+        "nomeFuncionario": "Rafael Oliveira Pereira",
+            "cep": "18060-000",
+            "logradouro": "Rua Comendador Gomes",
+            "complemento": "próximo ao shopping",
+            "bairro": "Jardim Santa Rosália",
+            "localidade": "Sorocaba",
+            "uf": "SP",
+            "estado": "São Paulo",
+            "ddd": "15",
         "cargo": "Desenvolvedor",
         "idUsuario": ObjectId(),
         "chatBot": [
@@ -304,18 +399,8 @@ db.funcionarios.aggregate([
     }
 ]);
 
-
 use('ada')
-db.lojas.insertOne({
-    "nomeLoja": "Loja X",
-    "localizacao": {
-        type: "Point",
-        coordinates: [-46.625290, -23.533773]
-    }
-});
-
-use('ada')
-db.lojas.find({
+db.clientes.find({
     localizacao: {
         $near: {
             $geometry: {
@@ -329,7 +414,7 @@ db.lojas.find({
 
 
 use('ada')
-db.lojas.find({
+db.clientes.find({
     localizacao: {
         $geoWithin: {
             $geometry: {
