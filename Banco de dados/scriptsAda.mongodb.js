@@ -1,7 +1,7 @@
 use('ada')
 db.clientes.insertMany([
     {
-        "_id": ObjectId(),
+        "_id": 1253456,
         "nomeCliente": "Álvaro",
         "telefone": "15991236399",
         "endereco": "Rua A, 123",
@@ -27,7 +27,7 @@ db.clientes.insertMany([
         }
     },
     {
-        "_id": ObjectId(),
+        "_id": 456789,
         "nomeCliente": "Berenice",
         "telefone": "15990154677",
         "endereco": "Rua B, 456",
@@ -53,7 +53,7 @@ db.clientes.insertMany([
         }
     },
     {
-        "_id": ObjectId(),
+        "_id": 467986,
         "nomeCliente": "Cláudio",
         "telefone": "15991356479",
         "endereco": "Rua C, 789",
@@ -79,7 +79,7 @@ db.clientes.insertMany([
         }
     },
     {
-        "_id": ObjectId(),
+        "_id": 761254,
         "nomeCliente": "Dartanhan",
         "telefone": "1535694678",
         "endereco": "Rua D, 101",
@@ -104,8 +104,9 @@ db.clientes.insertMany([
             "nomeCompleto": "Dartanhan Leis"
         }
     },
+
     {
-        "_id": ObjectId(),
+        "_id": 363625,
         "nomeCliente": "Ester",
         "telefone": "1546561378",
         "endereco": "Rua E, 202",
@@ -132,12 +133,11 @@ db.clientes.insertMany([
     }
 ]);
 
-
 use('ada');
 db.orcamentos.insertMany([
     {
-        "_id": ObjectId(),
-        "clienteId": ObjectId("CLIENTE_1_ID"), 
+        "_id": 123456, 
+        "clienteId": 456789, 
         "validadeOrcamento": "2024-01-01",
         "dataCriacao": "2023-09-01",
         "valorTotal": 1500,
@@ -147,8 +147,8 @@ db.orcamentos.insertMany([
         "emailVendedor": "vendedor1@example.com"
     },
     {
-        "_id": ObjectId(),
-        "clienteId": ObjectId("CLIENTE_2_ID"), 
+        "_id": 234567, 
+        "clienteId": 467986, 
         "validadeOrcamento": "2024-02-01",
         "dataCriacao": "2023-08-15",
         "valorTotal": 2000,
@@ -158,8 +158,8 @@ db.orcamentos.insertMany([
         "emailVendedor": "vendedor2@example.com"
     },
     {
-        "_id": ObjectId(),
-        "clienteId": ObjectId("CLIENTE_3_ID"), 
+        "_id": 345678,  
+        "clienteId": 761254, 
         "validadeOrcamento": "2024-03-01",
         "dataCriacao": "2023-07-20",
         "valorTotal": 2500,
@@ -169,8 +169,8 @@ db.orcamentos.insertMany([
         "emailVendedor": "vendedor3@example.com"
     },
     {
-        "_id": ObjectId(),
-        "clienteId": ObjectId("CLIENTE_4_ID"), 
+        "_id": 456789, 
+        "clienteId": 363625, 
         "validadeOrcamento": "2024-04-01",
         "dataCriacao": "2023-06-15",
         "valorTotal": 3000,
@@ -180,8 +180,8 @@ db.orcamentos.insertMany([
         "emailVendedor": "vendedor4@example.com"
     },
     {
-        "_id": ObjectId(),
-        "clienteId": ObjectId("CLIENTE_5_ID"), 
+        "_id": 567890,  
+        "clienteId": 363625, 
         "validadeOrcamento": "2024-05-01",
         "dataCriacao": "2023-05-10",
         "valorTotal": 3500,
@@ -192,10 +192,10 @@ db.orcamentos.insertMany([
     }
 ]);
 
-
+use('ada')
 db.funcionarios.insertMany([
     {
-        "_id": ObjectId(),
+        "_id": 678901, 
         "nomeFuncionario": "Lucas Andrade Silva",
         "cep": "18010-000",
         "logradouro": "Avenida Dom Aguirre",
@@ -206,18 +206,17 @@ db.funcionarios.insertMany([
         "estado": "São Paulo",
         "ddd": "15",
         "cargo": "Gerente",
-        "idUsuario": ObjectId(),
-        "idServico": ObjectId(), 
+        "idUsuario": 789012, 
         "chatBot": [
             {
-                "id_chatbot": ObjectId(),
+                "id_chatbot": 890123, 
                 "texto_chat": "Conversa inicial",
                 "data": "2023-08-01"
             }
         ]
     },
     {
-        "_id": ObjectId(),
+        "_id": 789012,  
         "nomeFuncionario": "Mariana Costa dos Santos",
         "cep": "18030-000",
         "logradouro": "Rua General Carneiro",
@@ -228,118 +227,38 @@ db.funcionarios.insertMany([
         "estado": "São Paulo",
         "ddd": "15",
         "cargo": "Atendente",
-        "idUsuario": ObjectId(),
-        "idServico": ObjectId(), 
+        "idUsuario": 890123,  
         "chatBot": [
             {
-                "id_chatbot": ObjectId(),
+                "id_chatbot": 901234, 
                 "texto_chat": "Segunda conversa",
                 "data": "2023-08-05"
-            }
-        ]
-    },
-    {
-        "_id": ObjectId(),
-        "nomeFuncionario": "Gabriel Almeida Ferreira",
-        "cep": "18273-000",
-        "logradouro": "Rua São Paulo",
-        "complemento": "",
-        "bairro": "Parque das Laranjeiras",
-        "localidade": "Votorantim",
-        "uf": "SP",
-        "estado": "São Paulo",
-        "ddd": "15",   
-        "cargo": "Supervisor",
-        "idUsuario": ObjectId(),
-        "idServico": ObjectId(),  
-        "chatBot": [
-            {
-                "id_chatbot": ObjectId(),
-                "texto_chat": "Terceira conversa",
-                "data": "2023-08-10"
-            }
-        ]
-    },
-    {
-        "_id": ObjectId(),
-        "nomeFuncionario": "Ana Paula Martins de Souza",
-        "cep": "18045-000",
-        "logradouro": "Avenida Itavuvu",
-        "complemento": "lado ímpar",
-        "bairro": "Jardim Vera Cruz",
-        "localidade": "Sorocaba",
-        "uf": "SP",
-        "estado": "São Paulo",
-        "ddd": "15",     
-        "cargo": "Analista",
-        "idUsuario": ObjectId(),
-        "idServico": ObjectId(),  
-        "chatBot": [
-            {
-                "id_chatbot": ObjectId(),
-                "texto_chat": "Quarta conversa",
-                "data": "2023-08-15"
-            }
-        ]
-    },
-    {
-        "_id": ObjectId(),
-        "nomeFuncionario": "Rafael Oliveira Pereira",
-        "cep": "18060-000",
-        "logradouro": "Rua Comendador Gomes",
-        "complemento": "próximo ao shopping",
-        "bairro": "Jardim Santa Rosália",
-        "localidade": "Sorocaba",
-        "uf": "SP",
-        "estado": "São Paulo",
-        "ddd": "15",
-        "cargo": "Desenvolvedor",
-        "idUsuario": ObjectId(),
-        "idServico": ObjectId(), 
-        "chatBot": [
-            {
-                "id_chatbot": ObjectId(),
-                "texto_chat": "Conversa final",
-                "data": "2023-08-20"
             }
         ]
     }
 ]);
 
-
+use('ada')
 db.servicos.insertMany([
     {
-        "_id": ObjectId(),
+        "_id": 901234, 
         "nome": "Serviço V",
         "valor": 1500,
         "tipoServico": "Venda"
     },
     {
-        "_id": ObjectId(),
+        "_id": 101234,  
         "nome": "Serviço M",
         "valor": 2000,
         "tipoServico": "Manutenção"
     },
     {
-        "_id": ObjectId(),
+        "_id": 111234,  
         "nome": "Serviço C",
         "valor": 2500,
         "tipoServico": "Consultoria"
-    },
-    {
-        "_id": ObjectId(),
-        "nome": "Serviço T",
-        "valor": 3000,
-        "tipoServico": "Treinamento"
-    },
-    {
-        "_id": ObjectId(),
-        "nome": "Serviço D",
-        "valor": 3500,
-        "tipoServico": "Desenvolvimento"
     }
 ]);
-
 
 
 //consulta servícos com valor superior a 500 reais
@@ -405,6 +324,7 @@ db.funcionarios.aggregate([
 ]);
 
 use('ada')
+db.clientes.createIndex({ localizacao: "2dsphere" });
 db.clientes.find({
     localizacao: {
         $near: {
@@ -418,7 +338,7 @@ db.clientes.find({
 });
 
 
-use('ada')
+use('ada');
 db.clientes.find({
     localizacao: {
         $geoWithin: {
@@ -426,11 +346,12 @@ db.clientes.find({
                 type: "Polygon",
                 coordinates: [
                     [
+                        [-47.466020, -23.503419],  
+                        [-47.455761, -23.501876],
+                        [-47.455798, -23.496514],
+                        [-47.457500, -23.451300],
                         [-46.633309, -23.550520],
-                        [-46.628796, -23.546678],
-                        [-46.620839, -23.548999],
-                        [-46.626310, -23.552060],
-                        [-46.633309, -23.550520]
+                        [-47.466020, -23.503419]   
                     ]
                 ]
             }
