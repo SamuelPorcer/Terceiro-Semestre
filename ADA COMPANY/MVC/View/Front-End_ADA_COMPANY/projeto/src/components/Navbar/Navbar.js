@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li className="nav-item" id="serviços">
-          <Link to="/servicos">Serviços</Link>
+          <Link to="/Servicos">Serviços</Link>
         </li>
         <li className="logo">
           <Link to="/">
