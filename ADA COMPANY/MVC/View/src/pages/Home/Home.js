@@ -42,6 +42,13 @@ const Home = () => {
             </button>
           </div>
           <h2>Buscamos o máximo de comprometimento com o seu serviço!</h2>
+          <section className="video-section">
+            <video controls width="100%">
+              <source src="/vdo/ada_pitch.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </section>
+
           <h3>Celia Almeida</h3>
           <form className="elogio">
             <img

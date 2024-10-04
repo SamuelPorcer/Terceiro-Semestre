@@ -369,3 +369,14 @@ h2 {
 #marcos {
     margin-right: 1px
 }
+
+.video-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video-section video, .video-section iframe {
+    max-width: 70%; /* Altere conforme a largura do carrossel */
+    margin-right: 1.5%;
+    height: auto; /* Mantém a proporção do vídeo */
+}
