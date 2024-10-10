@@ -83,7 +83,7 @@ E [Documentação ihc](ihc_compras.pdf). <br>
 <span id="link">
     
 > 🔗 **Links gerais** <br>
-> - Link do sistema funcional: [clique aqui para acessar](https://projeto-mvc-restful-frontend.vercel.app)
+> - Link do sistema funcional: [clique aqui para acessar](https://adacompany.vercel.app)
 > - Repositório do projeto: [clique aqui para acessar](https://github.com/ADACompany01/Terceiro-Semestre/tree/main)
 
 
