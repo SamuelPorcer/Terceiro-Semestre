@@ -77,13 +77,13 @@ Confira a seguir uma demonstraão das funcionalidades para cada tipo de usuário
 
 ### 📄 Documentação 
 As documentações deste projeto possuem mais detalhes do planejamento e da arquitetura do software. 
-Elas podem ser acessadas pelos links: [Documentação do projeto](documentacao_compras_pi.pdf)
-E [Documentação ihc](ihc_compras.pdf). <br>
+Elas podem ser acessadas pelos links: [Documentação do projeto]([documentacao_compras_pi.pdf](https://github.com/ADACompany01/Terceiro-Semestre/tree/main/Documentacao))
+E [Documentação ihc](https://github.com/ADACompany01/Terceiro-Semestre/tree/main/Documentacao). <br>
 
 <span id="link">
     
 > 🔗 **Links gerais** <br>
-> - Link do sistema funcional: [clique aqui para acessar](https://projeto-mvc-restful-frontend.vercel.app)
+> - Link do sistema funcional: [clique aqui para acessar](https://adacompany.vercel.app)
 > - Repositório do projeto: [clique aqui para acessar](https://github.com/ADACompany01/Terceiro-Semestre/tree/main)
 
 
