@@ -13,6 +13,7 @@ exports.getOrcamento = async function (req, res) {
 // Método para criar um orçamento
 exports.create = function (req, res) {
     let orcamento = new Orcamento({
+        _id: req.body._id,
         clienteId: req.body.clienteId,
         validadeOrcamento: req.body.validadeOrcamento,
         dataCriacao: req.body.dataCriacao,
@@ -39,6 +40,7 @@ exports.updateOrcamento = async function (req, res) {
 
         // Apenas os campos presentes no body serão atualizados
         const updateData = {};
+        if (req.body._id) updateData._id = req.body._id;
         if (req.body.clienteId) updateData.clienteId = req.body.clienteId;
         if (req.body.validadeOrcamento) updateData.validadeOrcamento = req.body.validadeOrcamento;
         if (req.body.dataCriacao) updateData.dataCriacao = req.body.dataCriacao;

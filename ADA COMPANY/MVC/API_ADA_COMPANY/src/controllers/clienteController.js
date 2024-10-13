@@ -12,6 +12,7 @@ exports.getClientes = async function (req, res) {
 exports.create = async function (req, res) {
     try {
         let cliente = new Cliente({
+            _id: req.body._id,
             nomeCliente: req.body.nomeCliente,
             telefone: req.body.telefone,
             endereco: req.body.endereco,
@@ -20,14 +21,16 @@ exports.create = async function (req, res) {
                 coordinates: req.body.localizacao.coordinates
             },
             cnpj: req.body.cnpj,
-            cep: req.body.cep,
-            logradouro: req.body.logradouro,
-            complemento: req.body.complemento,
-            bairro: req.body.bairro,
-            localidade: req.body.localidade,
-            uf: req.body.uf,
-            estado: req.body.estado,
-            ddd: req.body.ddd,
+            endereco: {
+                cep: req.body.cep,
+                logradouro: req.body.logradouro,
+                complemento: req.body.complemento,
+                bairro: req.body.bairro,
+                localidade: req.body.localidade,
+                uf: req.body.uf,
+                estado: req.body.estado,
+                ddd: req.body.ddd
+            },
             usuario: {
                 email: req.body.usuario.email,
                 senha: req.body.usuario.senha,

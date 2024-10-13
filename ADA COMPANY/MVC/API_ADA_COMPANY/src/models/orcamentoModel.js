@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let orcamentoSchema = new Schema({
+    _id:{
+        type: Number,
+        required: true
+    },
     clienteId: {
         type: Number,
         ref: 'Cliente',
