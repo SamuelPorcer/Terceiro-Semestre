@@ -6,12 +6,13 @@ const jwt = require('jsonwebtoken');
 // Registrar Cliente
 exports.registerCliente = async (req, res) => {
     const {
-        nomeCliente, telefone, endereco, cnpj, cep, logradouro, complemento, bairro, localidade,
+        _id, nomeCliente, telefone, endereco, cnpj, cep, logradouro, complemento, bairro, localidade,
         uf, estado, ddd, localizacao, usuario
     } = req.body;
 
     try {
         const cliente = new Cliente({
+            _id,
             nomeCliente,
             telefone,
             endereco,
