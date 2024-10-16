@@ -35,6 +35,36 @@ exports.registerCliente = async (req, res) => {
     }
 };
 
+// Registrar Funcionário
+exports.registerFuncionario = async (req, res) => {
+    const {
+        _id, nomeFuncionario, cep, logradouro, complemento, bairro, localidade,
+        uf, estado, ddd, cargo, idUsuario, chatBot
+    } = req.body;
+
+    try {
+        const funcionario = new Funcionario({
+            _id,
+            nomeFuncionario,
+            cep,
+            logradouro,
+            complemento,
+            bairro,
+            localidade,
+            uf,
+            estado,
+            ddd,
+            cargo,
+            idUsuario,
+            chatBot
+        });
+        await funcionario.save();
+        res.status(201).json({ message: 'Funcionario registrado com sucesso!' });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+};
+
 // Login de usuário (Cliente ou Funcionário)
 exports.loginUser = async (req, res) => {
     const { email, senha } = req.body;
