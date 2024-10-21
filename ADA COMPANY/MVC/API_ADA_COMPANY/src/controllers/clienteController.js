@@ -15,21 +15,20 @@ exports.create = async function (req, res) {
             _id: req.body._id,
             nomeCliente: req.body.nomeCliente,
             telefone: req.body.telefone,
-            endereco: req.body.endereco,
             localizacao: {
                 type: 'Point',
                 coordinates: req.body.localizacao.coordinates
             },
             cnpj: req.body.cnpj,
             endereco: {
-                cep: req.body.cep,
-                logradouro: req.body.logradouro,
-                complemento: req.body.complemento,
-                bairro: req.body.bairro,
-                localidade: req.body.localidade,
-                uf: req.body.uf,
-                estado: req.body.estado,
-                ddd: req.body.ddd
+                cep: req.body.endereco.cep,
+                logradouro: req.body.endereco.logradouro,
+                complemento: req.body.endereco.complemento,
+                bairro: req.body.endereco.bairro,
+                localidade: req.body.endereco.localidade,
+                uf: req.body.endereco.uf,
+                estado: req.body.endereco.estado,
+                ddd: req.body.endereco.ddd
             },
             usuario: {
                 email: req.body.usuario.email,

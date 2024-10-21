@@ -35,7 +35,7 @@ app.use(orcamentoRoute);
 // Swagger (Documentação)
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-let url = 'mongodb+srv://LuizRiato:cPm0EQ0bQ3Wbf7Jr@cluster0.j8nksa9.mongodb.net/?retryWrites=true&w=majority&appName=persistenciaDados';
+let url = 'mongodb://localhost:27017/';
 let mongoDB = process.env.MONGODB_URI || url;
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoDB);
