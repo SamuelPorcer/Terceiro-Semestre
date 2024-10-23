@@ -1,6 +1,6 @@
 <span id="topo">
 
-<h1 align="center">Sprint 1: 06/05/2024 a 20/05/2024</h1>
+<h1 align="center">Sprint 1: 27/09/2024 a 05/10/2024</h1>
 
 <p align="center">
     <a href="#objetivos">Objetivos da sprint</a> &nbsp |&nbsp &nbsp
@@ -15,15 +15,12 @@ O desenvolvimento do site visa facilitar o trabalho do funcionário responsável
 ## :dart: Objetivos da Sprint
 
 Os requisitos abrangidos por essa sprint são:
-- **RF 01:** Realizar cadastro
-- **RF 02:** Login do usuário
-- **RF 03:** Pesquisa de produtos pelo Web Service da BEC
-- **RNF 12:** Utilizar HTML e CSS
-- **RNF 13:** Utilizar JavaScript
-- **RNF 14:** Utilizar Angular
-- **RNF 15:** Utilizar banco NoSQL
-- **RNF 16:** Autenticação de Usuário via JWT
-- **RNF 17:** Implementar Web Service de pesquisa da BEC
+- **01:** Consultas Básicas
+- **02:** Consultas Geoespaciais
+- **03:** Atualizar o MER (Modelo Entidade-Relacionamento)
+- **04:** Desenvolver API RESTful CRUD
+- **05:** Hospedar a API no Vercel e Subir no GitHub
+- **06:** Junções
 
 <span id="entregas">
 
@@ -41,16 +38,37 @@ Para extrair e entender os desejos do cliente, foi construído um protótipo ini
 
 Este protótipo valida a entrega dos requisitos confirmados para a sprint, onde suas descrições podem ser checadas a seguir:
 
-### RF 01 e RF 02: Realizar cadastro e login de usuário
+### 01 e 02: Consultar basicas e consultas geoespaciais
 
-Este requisito se trata do cadastro e login de usuários, apenas os funcionários gerais realizam o cadastro, como descrito no caso de uso. Ambos os usuários realizarão login, porém terão telas especificas, por exemplo: 
-- **Funcionário geral** tem uma página com a opção de realizar pesquisas com a web service da BEC, opção de quantidade e discrição do pedido.
-- **Funcionário diretor de serviços administrativos** tem uma página com o histórico dos pedidos realizados e um filtro para realizar pesquisas especificas.
+Realizar pelo menos 5 consultas utilizando os operadores do checklist.
 
-### RF 03: Pesquisa de produtos pela web service da BEC
+Ex: encontrar todos os produtos com preço maior que X, listar todos os pedidos de um determinado usuário, etc.
 
-Este requisito se trata da pesquisa de produtos por uma web service conectada a bolsa eletrônica de compras, que retornara os produtos pesquisados e a natureza do produto em questão e seu id para adicioná-lo a um pedido.
+Armazenamento: Armazene dados geográficos (por exemplo, a localização de lojas ou clientes) utilizando o tipo GeoJSON.
 
+Consultas: Realize ao menos 2 consultas geospaciais para encontrar documentos dentro de um raio específico de um ponto ou dentro de um polígono. Por exemplo, encontrar todas as lojas em um raio de 5km de um determinado endereço, ou listar todos os clientes dentro de uma determinada cidade.
+
+### 03: Atualizar o MER (Modelo Entidade-Relacionamento)
+
+Este requisito se trata da atualização do MER, realizando todos os ajustes necessarios .
+
+### 04 e 05: Desenvolver API RESTful CRUD e hospedar a API no Vercel e Subir no GitHub
+
+Desenvolvimento uma API RESTful completa que permita a realização das operações básicas: GET, POST, PUT e DELETE. Cada operação deve ser mapeada para as rotas apropriadas no seu servidor.
+
+Utilização da arquitetura MVC para desenvolvimento da aplicação.
+
+Deverá conter obrigatoriamente um microsserviço.
+
+Api documentada utilizando uma das ferramentas de documentação apresentadas em aula. Exemplo Postman ou Swagger.
+
+A aplicação deverá ser hospedada no GitHub e ter sua documentação descrita no arquivo READMe. Não esqueça de incluir o nome dos integrantes do grupo.
+
+Aplicação hospedada em nuvem, através do vercel
+
+### 05: Junções
+
+Utilizar o operador $lookup em pelo menos 2 consultas para realizar junções entre coleções e obter informações relacionadas. Por exemplo, encontrar os detalhes dos produtos de um pedido específico.
 
 <details>
    <summary>Diagrama de classes</summary>
